@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RoyalStay Hotel</title>
+  <link rel="stylesheet" href="style1.css" />
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="logo">RoyalStay</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#rooms">Rooms</a></li>
+        <li><a href="#facilities">Facilities</a></li>
+        <li><a href="first.html" >Food</a></li>
+        <li><span class="login-link" onclick="openAuth()"><a href="http://localhost/hotel-booking/login.html">Login</a></span></li>
+         <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="hero-text">
+      <h1>Welcome to 3not hotal</h1>
+      <p>Luxury redefined. Experience comfort like never before.</p>
+      
+    </div>
+  </section>
+
+  <section id="rooms" class="section">
+    <h2>Our Rooms</h2>
+    <div class="cards">
+      <div class="card1">
+        <img src="images/room1.jpg" alt="Deluxe Room" width="100px" height="100px">
+        <h3>Deluxe Room</h3>
+        <p>₹3500/night</p>
+      </div>
+      <div class="card2">
+        <img src="images/room2.jpg" alt="Luxury Suite" width="100px" height="100px">
+        <h3>Luxury Suite</h3>
+        <p>₹5500/night</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="facilities" class="section alt">
+    <h2>Facilities</h2>
+    <ul class="features">
+      <li>Free Wi-Fi,</li>
+      <li>Swimming Pool,</li>
+      <li>24x7 Room Service,</li>
+      <li>Spa & Gym</li>
+    </ul>
+  </section>
+
+  <section id="food" class="section">
+    <h2>Our Food</h2>
+    <p>Enjoy world-class dining from our multi-cuisine restaurant.</p>
+    <img src="images/food.jpg" alt="Delicious Food" class="food-img">
+  </section>
+
+  <div class="modal-overlay" id="authOverlay">
+    <div class="auth-modal">
+      <span class="close-btn" onclick="closeAuth()">&times;</span>
+      <div id="loginBox" class="loginBox">
+        <h2>Login</h2>
+        <input type="email" id="loginEmail" placeholder="Email">
+        <input type="password" id="loginPassword" placeholder="Password">
+        <div id="loginError" style="color:red; display:none;">Invalid email or password.</div>
+        <button onclick="validateLoginForm()">Login</button>
+        <p>Don't have an account? <a href="#" onclick="toggleAuth()">Sign Up</a></p>
+      </div>
+      <div id="signupBox" class="loginBox hidden">
+        <h2>Sign Up</h2>
+        <input type="text" id="signupFullName" placeholder="Full Name">
+        <input type="email" id="signupEmail" placeholder="Email">
+        <input type="password" id="signupPassword" placeholder="Password">
+        <input type="password" id="signupConfirmPassword" placeholder="Confirm Password">
+        <button onclick="validateSignUpForm()">Sign Up</button>
+        <p>Already have an account? <a href="#" onclick="toggleAuth()">Login</a></p>
+      </div>
+    </div>
+  </div>
+
+
+    <section id="contact" class="section alt">
+      <h2>Contact Us</h2>
+      <p>Email: himanshu@gmail.com | Phone: +91-9638524105</p>
+      <p>Email: Ayush234@gmail.com | Phone: +91-9876543210</p>
+    </section>
+
+  <footer>
+    <p>&copy; 2025 RoyalStay Hotel. All rights reserved.</p>
+  </footer>
+  </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
